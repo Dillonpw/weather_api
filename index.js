@@ -19,7 +19,7 @@ async function getLocation() {
     errorTip.style.display = 'none';
 
     const response = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${searchQueryElement.value}&aqi=no
+        `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${searchQueryElement.value}&aqi=no
     `,
         { mode: 'cors' }
     );
